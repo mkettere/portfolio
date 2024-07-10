@@ -1,0 +1,11 @@
+# portfolio
+## Matt Ketterer
+### Education
+Applied Statistics, Master's Dec. 2024
+Chemistry, B.S. May 2010
+Minor in Mathematics
+### Projects
+#### Coast Guard Boating Accident Reporting Database (BARD) Shiny app and visualizations
+#### Behavioral Risk Factor Surveillance System 
+Metropolitan SMART BRFSS
+A comparison of US metropolitan and micropolitan statistical areas (MMSA) health indicators utilizing BRFSS and Census data Survey package in R. 
