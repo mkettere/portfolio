@@ -3,7 +3,7 @@
 ### Education
 Applied Statistics, Master's Dec. 2024
 
-Chemistry, B.S. May 2010
+Chemistry, B.S.
 Minor in Mathematics
 ### Projects
 #### Coast Guard Boating Accident Reporting Database (BARD) Shiny app and visualizations
