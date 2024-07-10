@@ -1,4 +1,4 @@
-# portfolio
+
 ## Matt Ketterer
 ### Education
 Applied Statistics, Master's Dec. 2024
