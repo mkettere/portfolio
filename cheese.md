@@ -6,7 +6,7 @@ The dataset provided for analysis encompassed two brand comparison experiments c
 Subjects were asked their preference between the two samples, as well as asked to rate each on a 9-point scale (higher=better) on six attributes. These six attributes were Taste, Texture, Appearance, Color, Temperature, and Overall Liking. The only parts of the preparation/recipe that were variable were oil “Brand” and “Age”, all others (time cooked, temperature of oil, etc.) were fixed.
 The overall objective of the study was to determine which brand of oil customers preferred, as well as the impact of age of oil on customer liking. Another objective was to determine which attributes surveyed are most important to customers.
 
- - RESEARCH QUESTIONS
+ RESEARCH QUESTIONS
 Question 1: Which brand of oil do customers prefer?
 Question 2: How much of an impact does age of oil have?
 Question 3: Which of the following attributes are most important to customers? (Taste, Texture, Appearance, Color, Temperature)
