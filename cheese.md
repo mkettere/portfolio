@@ -1,6 +1,16 @@
 [<back](https://mkettere.github.io/portfolio/)
 
-## Appendix Project 1- French Fry Dataset
+## R analysis of French Fry Dataset 
+1 - PROJECT DESCRIPTION
+The dataset provided for analysis encompassed two brand comparison experiments conducted each over five different days; the participants were volunteers in a university setting. Subjects were given two different preparation of fries to taste on a particular day, each with a different brand of oil, and the same randomly assigned age of oil (1 through 5). Note that in each brand comparison subjects were given two different brands with oil that was the same age for each brand.
+Subjects were asked their preference between the two samples, as well as asked to rate each on a 9-point scale (higher=better) on six attributes. These six attributes were Taste, Texture, Appearance, Color, Temperature, and Overall Liking. The only parts of the preparation/recipe that were variable were oil “Brand” and “Age”, all others (time cooked, temperature of oil, etc.) were fixed.
+The overall objective of the study was to determine which brand of oil customers preferred, as well as the impact of age of oil on customer liking. Another objective was to determine which attributes surveyed are most important to customers.
+
+ - RESEARCH QUESTIONS
+Question 1: Which brand of oil do customers prefer?
+Question 2: How much of an impact does age of oil have?
+Question 3: Which of the following attributes are most important to customers? (Taste, Texture, Appearance, Color, Temperature)
+2. - EXPLORATORY DATA ANALYSIS (EDA)
 
 ##Load in Data
 
