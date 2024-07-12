@@ -13,7 +13,7 @@ RESEARCH QUESTIONS
 > 
 > Question 3: Which of the following attributes are most important to customers? (Taste, Texture, Appearance, Color, Temperature)
 > 
-2. - EXPLORATORY DATA ANALYSIS (EDA)
+2.  EXPLORATORY DATA ANALYSIS (EDA)
 
 ##Load in Data
 
