@@ -12,4 +12,5 @@ Minor in Mathematics
 #### Behavioral Risk Factor Surveillance System 
 Metropolitan SMART BRFSS
 A comparison of US metropolitan and micropolitan statistical areas (MMSA) health indicators utilizing BRFSS and Census data Survey package in R. 
-[link markdown test]{% link link.md %}
+
+[cheese](stat580proj1.html) 
