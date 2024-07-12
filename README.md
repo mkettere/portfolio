@@ -15,5 +15,5 @@ A comparison of US metropolitan and micropolitan statistical areas (MMSA) health
 
 [French Fry dataset](cheese.md) 
 <img src="pics/frypic.jpg" width="200" height="200">
-<img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="200" height="200">
-<img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="200" height="200">
+<img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="300" height="300">
+<img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="300" height="300">
