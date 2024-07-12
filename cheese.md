@@ -8,8 +8,11 @@ The overall objective of the study was to determine which brand of oil customers
 
 RESEARCH QUESTIONS
 > Question 1: Which brand of oil do customers prefer?
+> 
 > Question 2: How much of an impact does age of oil have?
+> 
 > Question 3: Which of the following attributes are most important to customers? (Taste, Texture, Appearance, Color, Temperature)
+> 
 2. - EXPLORATORY DATA ANALYSIS (EDA)
 
 ##Load in Data
