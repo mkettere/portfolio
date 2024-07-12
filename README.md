@@ -8,7 +8,7 @@ Minor in Mathematics
 ### Projects
 #### Coast Guard Boating Accident Reporting Database (BARD) Shiny app and visualizations
 
-<img src="pics/lifejacketwp_orig.jpg" width="500" height="400">
+![](pics/safety_logo.jpg)
 
 
  [Shiny interactive map](https://matt-k.shinyapps.io/mapshiny/)
