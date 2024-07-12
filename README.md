@@ -14,3 +14,4 @@ Metropolitan SMART BRFSS
 A comparison of US metropolitan and micropolitan statistical areas (MMSA) health indicators utilizing BRFSS and Census data Survey package in R. 
 
 [French Fry dataset](cheese.md) ![](pics/frypic.jpg)
+<img src="frypic.jpg" width="200" height="100">
