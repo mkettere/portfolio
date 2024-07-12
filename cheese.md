@@ -1,4 +1,4 @@
-[<back](Readme.md)
+[<back](README.md)
 
 ## Appendix Project 1- French Fry Dataset
 
