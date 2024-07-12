@@ -1,22 +1,21 @@
 
 ## Matt Ketterer
-### Education
+###Education
 Applied Statistics, Master's Dec. 2024
 
 Chemistry, B.S.
 Minor in Mathematics
-#Projects
+###Projects
 #### Coast Guard Boating Accident Reporting Database (BARD) Shiny app and visualizations
-
+---
 * [Shiny interactive map](https://matt-k.shinyapps.io/mapshiny/)
-#### Behavioral Risk Factor Surveillance System 
-Metropolitan SMART BRFSS
-A comparison of US metropolitan and micropolitan statistical areas (MMSA) health indicators utilizing BRFSS and Census data Survey package in R. 
-
-####[French Fry dataset](cheese.md)
+---  
+ ####Brands of Oil in French Fries
+ <img src="pics/frypic.jpg" width="200" height="200">
+ *[link to analysis](cheese.md)*
 ---
 EDA using Likert survey results and feature engineering a normally distributed response to compare brands of oil in an ANOVA
-<img src="pics/frypic.jpg" width="200" height="200"><img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="300" height="300"><img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="300" height="300">
 
-*[French Fry dataset](cheese.md)*
+<img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="300" height="300"><img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="300" height="300">
+
 
