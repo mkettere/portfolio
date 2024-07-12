@@ -16,6 +16,6 @@ Minor in Mathematics
 
 EDA using Likert survey results and feature engineering a normally distributed response to compare brands of oil in an ANOVA
 
-<img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="500" height="500"><img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="500" height="500">
+<img src="stat580proj1_files/figure-markdown_github/graph-1.png" width="500" height="400"><img src="stat580proj1_files/figure-markdown_github/factorplot-1.png" width="500" height="400">
 
 
