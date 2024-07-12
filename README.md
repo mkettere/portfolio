@@ -10,7 +10,7 @@ Minor in Mathematics
 ---
 * [Shiny interactive map](https://matt-k.shinyapps.io/mapshiny/)
 ---  
- ####Brands of Oil in French Fries
+ #### Brands of Oil in French Fries
  <img src="pics/frypic.jpg" width="200" height="200">
  *[link to analysis](cheese.md)*
 ---
