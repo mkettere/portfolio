@@ -8,6 +8,7 @@ Minor in Mathematics
 ### Projects
 #### Coast Guard Boating Accident Reporting Database (BARD) Shiny app and visualizations
 
+
  [Shiny interactive map](https://matt-k.shinyapps.io/mapshiny/)
 
 #### Brands of Oil in French Fries
