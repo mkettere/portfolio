@@ -1,0 +1,190 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Park Access and
+Health: My Journey with Spatial Data Analysis</span></p>
+
+<p class=MsoNormal>Hello, my name is Matt Ketterer and I am recent Master of
+Applied Statistics graduate from Pennsylvania State University. In my research
+project I utilized spatial data to estimate the health benefits of public park
+access. While I am not an ArcGIS user, I found through my research that spatial
+data can lead to new feature engineered variables. This blog post is about my
+journey using spatial data to predict health by combining it and national
+health survey data.  </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The Trust for Public Land (tpl.org) is dedicated to
+increasing and tracking public park access in the US. Its mission of
+“connecting everyone to the outdoors” is an easy to get behind concept and
+would likely be beneficial to people’s health. Still, I wondered if I would be
+able to model this relationship to show if access improves health outcomes and
+by how much. For instance, it would be valuable to know from a healthcare cost
+savings standpoint the extent to which park access could reduce health care
+visits by encouraging outdoor activities and physical activity. I wanted to see
+if I could model this using the US metropolitan and micropolitan areas from the
+CDC’s Behavioral Risk Factor Surveillance Survey (BRFSS) data. This is a subset
+from a massive telephone health survey that focuses on town and city areas
+where most of the population resides and is predicted to grow in the future. </p>
+
+<p class=MsoNormal>The ParkServe database is a great tool that I came across.
+While its main function is to serve as an inventory for parks, it has census
+demographics and some health related filters embedded in the website. I used it
+to compare access percentages across the surveyed health responses from the
+CDC.</p>
+
+<p class=MsoNormal><img width=624 height=298 id="Picture 2"
+src="ESRI_blog_post_files/image001.jpg"
+alt="Map&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal style='line-height:normal'>Parkserve Database
+(parkserve.tpl.org)</p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Data
+Gathering and Exploratory Analysis</span></p>
+
+<p class=MsoNormal>Since the public park data is through a web portal, I had to
+manually retrieve the values for each of the 130 of the CDC’s surveyed
+metropolitan and micropolitan areas from the ParkServe Database GIS portal. This
+part of data gathering was sometimes laborious, but once I had all the values
+for each city/region, I could merge it with the approximately 220,000
+individual responses to their corresponding city in the CDC dataset using the R
+programming language. The hardest part was when some of the regions didn’t
+match completely, due to slight changes in the core based statistical area
+(CBSA) definitions between 2015 and 2024. In the case where a county was
+missing between two CBSA definitions, I had to manually combine counties to
+come up with a park access estimate using weighted population averages.</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'><img width=624 height=422
+id="Picture 11" src="ESRI_blog_post_files/image002.jpg"
+alt="Diagram, map&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal style='line-height:normal'>Survey regions defined in the
+SMART BRFSS dataset 2015</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Building a
+Statistical Model and Results</span></p>
+
+<p class=MsoNormal>To estimate the effect of public park access, I chose a response
+variable to the survey question of “How many days in the last 30 days was your
+physical health not good?”. This is a discrete count variable between 0 and 30
+that could be modelled with a count distribution, in this case a zero-inflated
+negative binomial model. The advantage of using a count variable in a
+statistical model, as opposed to a categorical one, such as asking if your
+health is “Good”, “Fair”, or “Poor”, is that there is more information, thus
+giving more statistical power, since there are 31 ‘bins’ of responses and they
+are ordered. The model was also adjusted for many factors that would affect
+health, this was to give some validation to the park access variable. These
+predictor variables used in the model were park access, age, race, sex, education,
+and smoking. The region itself was also included in the model to see if there
+were any differences in unhealthy days responses but was not statistically
+different from any other city. </p>
+
+<p class=MsoNormal><img width=462 height=462 id="Picture 8"
+src="ESRI_blog_post_files/image003.jpg"
+alt="Chart, scatter chart&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Predicted number of unhealthy days broken down by education,
+age, and park access tier</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=448 height=448 id="Picture 10"
+src="ESRI_blog_post_files/image004.jpg"
+alt="Chart&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal>Predicted number of unhealthy days by sex, race, and park
+access tier</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>After adjusting for other factors known to be a cause of
+poor health, park access has a small but significant effect. Inhabitants living
+in a city with a better park system have a lower predicted number of sick days
+than those that live in the lowest tier. This would imply that increased access
+helps drive park usage and physical activity such as walking and being in
+nature, improving health. Also, when we are talking about whole populations,
+small positive benefits add up to cost savings. </p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Final
+Thoughts</span></p>
+
+<p class=MsoNormal>I am excited and inspired to pursue more spatial and
+non-spatial data together in my future research. I hope to work directly with
+ArcGIS and R in the future to explore the possibilities. In the meantime, I’m
+going to take my kid to the park. If you ever get a chance to explore the Puget
+Sound and Bremerton, Washington, take in the beautiful scenery, maybe at a
+public park. It is good for your health!</p>
+
+<p class=MsoNormal>Thanks for reading! Please feel free to contact me with
+questions by email at <a href="mailto:mketterbob@gmail.com">mketterbob@gmail.com</a>
+or on <a href="http://LinkedIn/in/matt-ketterer-bebop">LinkedIn</a>. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal> </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
